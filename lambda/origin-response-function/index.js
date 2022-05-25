@@ -29,7 +29,6 @@ exports.handler = async (event, context, callback) => {
 
       const key = uri.substring(1)
       const s3key = key.replace('.webp', `.${format}`)
-      console.error("-------s3key-----------",s3key)
       try {
         const bucketResource = await S3.getObject({ Bucket: BUCKET, Key: s3key }).promise()
         const sharpImageBuffer = await Sharp(bucketResource.Body)
