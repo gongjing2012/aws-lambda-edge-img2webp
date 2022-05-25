@@ -3,11 +3,11 @@ const AWS = require('aws-sdk')
 
 const S3 = new AWS.S3({
   signatureVersion: 'v4',
-  region: 'ap-northeast-1'
+  region: 'us-east-1'
 })
 
 const Sharp = require('sharp')
-const BUCKET = 'img.bmpi.dev'
+const BUCKET = 'aws-lambda-edge-image2webp'
 const QUALITY = 70
 
 exports.handler = async (event, context, callback) => {
@@ -29,7 +29,7 @@ exports.handler = async (event, context, callback) => {
 
       const key = uri.substring(1)
       const s3key = key.replace('.webp', `.${format}`)
-
+      console.error("-------s3key-----------",s3key)
       try {
         const bucketResource = await S3.getObject({ Bucket: BUCKET, Key: s3key }).promise()
         const sharpImageBuffer = await Sharp(bucketResource.Body)

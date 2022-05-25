@@ -1,127 +1,127 @@
 {
-  "Records": [
-      {
-          "cf": {
-              "config": {
-                  "distributionDomainName": "d2kzcnvhjb91e1.cloudfront.net",
-                  "distributionId": "E3PCQU3A6CFQ4H",
-                  "eventType": "origin-response",
-                  "originRequestId": "Y7MAEZau_q3jOc1Ma7aTvFKAn6hPcCl9xWz_QItpqC4xeMfsxfpV2A==",
-                  "requestId": "WnhlyBC4p4S8JuFvhNSOMO5cUECpGNm0CzuMf11TEkKKldqFPPvxTQ=="
-              },
-              "request": {
-                  "clientIp": "47.244.139.248",
-                  "headers": {
-                      "x-forwarded-for": [
-                          {
-                              "key": "X-Forwarded-For",
-                              "value": "47.244.139.248"
-                          }
-                      ],
-                      "user-agent": [
-                          {
-                              "key": "User-Agent",
-                              "value": "Amazon CloudFront"
-                          }
-                      ],
-                      "via": [
-                          {
-                              "key": "Via",
-                              "value": "1.1 29bf23b0d9be006c98870ede94133eb5.cloudfront.net (CloudFront)"
-                          }
-                      ],
-                      "dnt": [
-                          {
-                              "key": "dnt",
-                              "value": "1"
-                          }
-                      ],
-                      "sec-fetch-site": [
-                          {
-                              "key": "sec-fetch-site",
-                              "value": "same-site"
-                          }
-                      ],
-                      "sec-fetch-mode": [
-                          {
-                              "key": "sec-fetch-mode",
-                              "value": "no-cors"
-                          }
-                      ],
-                      "accept-encoding": [
-                          {
-                              "key": "Accept-Encoding",
-                              "value": "gzip"
-                          }
-                      ],
-                      "original-resource-type": [
-                          {
-                              "key": "Original-Resource-Type",
-                              "value": "image/png"
-                          }
-                      ],
-                      "host": [
-                          {
-                              "key": "Host",
-                              "value": "img.bmpi.dev.s3.amazonaws.com"
-                          }
-                      ]
-                  },
-                  "method": "GET",
-                  "origin": {
-                      "s3": {
-                          "authMethod": "none",
-                          "customHeaders": {},
-                          "domainName": "img.bmpi.dev.s3.amazonaws.com",
-                          "path": ""
-                      }
-                  },
-                  "querystring": "",
-                  "uri": "/bd6342c1-5978-da7e-b960-10c0f48cdea9.webp"
-              },
-              "response": {
-                  "headers": {
-                      "x-amz-request-id": [
-                          {
-                              "key": "x-amz-request-id",
-                              "value": "EBD32BDE58BEC20A"
-                          }
-                      ],
-                      "x-amz-id-2": [
-                          {
-                              "key": "x-amz-id-2",
-                              "value": "y77WkBEtHLuEdZO/IjzjKYMnic3jQTHY/ygoL1XotCxdjyxvKdO0lJb9SkfaHejkPJ0gOaNcsao="
-                          }
-                      ],
-                      "date": [
-                          {
-                              "key": "Date",
-                              "value": "Sun, 02 Feb 2020 03:20:59 GMT"
-                          }
-                      ],
-                      "server": [
-                          {
-                              "key": "Server",
-                              "value": "AmazonS3"
-                          }
-                      ],
-                      "content-type": [
-                          {
-                              "key": "Content-Type",
-                              "value": "application/xml"
-                          }
-                      ],
-                      "transfer-encoding": [
-                          {
-                              "key": "Transfer-Encoding",
-                              "value": "chunked"
-                          }
-                      ]
-                  },
-                  "status": "403",
-                  "statusDescription": "Forbidden"
-              }
-          }
-      }
-  ]
+    "Records": [
+        {
+            "cf": {
+                "config": {
+                    "distributionDomainName": "d3kwr4dlah9yke.cloudfront.net",
+                    "distributionId": "E8BX6B9744AH6",
+                    "eventType": "origin-response",
+                    "originRequestId": "Y7MAEZau_q3jOc1Ma7aTvFKAn6hPcCl9xWz_QItpqC4xeMfsxfpV2A==",
+                    "requestId": "WnhlyBC4p4S8JuFvhNSOMO5cUECpGNm0CzuMf11TEkKKldqFPPvxTQ=="
+                },
+                "request": {
+                    "clientIp": "47.244.139.248",
+                    "headers": {
+                        "x-forwarded-for": [
+                            {
+                                "key": "X-Forwarded-For",
+                                "value": "47.244.139.248"
+                            }
+                        ],
+                        "user-agent": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Amazon CloudFront"
+                            }
+                        ],
+                        "via": [
+                            {
+                                "key": "Via",
+                                "value": "1.1 29bf23b0d9be006c98870ede94133eb5.cloudfront.net (CloudFront)"
+                            }
+                        ],
+                        "dnt": [
+                            {
+                                "key": "dnt",
+                                "value": "1"
+                            }
+                        ],
+                        "sec-fetch-site": [
+                            {
+                                "key": "sec-fetch-site",
+                                "value": "same-site"
+                            }
+                        ],
+                        "sec-fetch-mode": [
+                            {
+                                "key": "sec-fetch-mode",
+                                "value": "no-cors"
+                            }
+                        ],
+                        "accept-encoding": [
+                            {
+                                "key": "Accept-Encoding",
+                                "value": "gzip"
+                            }
+                        ],
+                        "original-resource-type": [
+                            {
+                                "key": "Original-Resource-Type",
+                                "value": "image/jpg"
+                            }
+                        ],
+                        "host": [
+                            {
+                                "key": "Host",
+                                "value": "aws-lambda-edge-image2webp.s3.amazonaws.com"
+                            }
+                        ]
+                    },
+                    "method": "GET",
+                    "origin": {
+                        "s3": {
+                            "authMethod": "none",
+                            "customHeaders": {},
+                            "domainName": "aws-lambda-edge-image2webp.s3.amazonaws.com",
+                            "path": ""
+                        }
+                    },
+                    "querystring": "",
+                    "uri": "/4k1.webp"
+                },
+                "response": {
+                    "headers": {
+                        "x-amz-request-id": [
+                            {
+                                "key": "x-amz-request-id",
+                                "value": "EBD32BDE58BEC20A"
+                            }
+                        ],
+                        "x-amz-id-2": [
+                            {
+                                "key": "x-amz-id-2",
+                                "value": "y77WkBEtHLuEdZO/IjzjKYMnic3jQTHY/ygoL1XotCxdjyxvKdO0lJb9SkfaHejkPJ0gOaNcsao="
+                            }
+                        ],
+                        "date": [
+                            {
+                                "key": "Date",
+                                "value": "Sun, 02 Feb 2020 03:20:59 GMT"
+                            }
+                        ],
+                        "server": [
+                            {
+                                "key": "Server",
+                                "value": "AmazonS3"
+                            }
+                        ],
+                        "content-type": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/xml"
+                            }
+                        ],
+                        "transfer-encoding": [
+                            {
+                                "key": "Transfer-Encoding",
+                                "value": "chunked"
+                            }
+                        ]
+                    },
+                    "status": "403",
+                    "statusDescription": "Forbidden"
+                }
+            }
+        }
+    ]
 }

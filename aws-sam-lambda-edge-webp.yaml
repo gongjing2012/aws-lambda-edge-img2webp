@@ -5,21 +5,21 @@ Resources:
   ViewerRequestFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      CodeUri: s3://bmpidev-aws-lambda-edge/viewer-request-function.zip
+      CodeUri: s3://aws-lambda-edge-image2webp/viewer-request-function.zip
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs12.x
       Timeout: 5
       Role: !GetAtt WebpExecutionRole.Arn
-      FunctionName: bmpidevImgTransformRequest
+      FunctionName: image1TransformRequest
   OriginResponseFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      CodeUri: s3://bmpidev-aws-lambda-edge/origin-response-function.zip
+      CodeUri: s3://aws-lambda-edge-image2webp/origin-response-function.zip
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs12.x
       Timeout: 5
       Role: !GetAtt WebpExecutionRole.Arn
-      FunctionName: bmpidevImgTransformResponse
+      FunctionName: image1TransformResponse
 
   # ==== ROLES ==== #
   WebpExecutionRole:
