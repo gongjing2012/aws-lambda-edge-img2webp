@@ -10,7 +10,7 @@ Resources:
       Runtime: nodejs12.x
       Timeout: 5
       Role: !GetAtt WebpExecutionRole.Arn
-      FunctionName: image1TransformRequest
+      FunctionName: imageTransformRequest
   OriginResponseFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
@@ -19,7 +19,7 @@ Resources:
       Runtime: nodejs12.x
       Timeout: 5
       Role: !GetAtt WebpExecutionRole.Arn
-      FunctionName: image1TransformResponse
+      FunctionName: imageTransformResponse
 
   # ==== ROLES ==== #
   WebpExecutionRole:
@@ -46,8 +46,17 @@ Resources:
         Version: 2012-10-17
         Statement:
           - Effect: Allow
+            Sid: ExampleStmt1
             Action:
             - logs:CreateLogGroup
             - logs:CreateLogStream
             - logs:PutLogEvents
             Resource: '*'
+          - Effect: Allow
+            Sid: ExampleStmt2
+            Action:
+            - s3:GetObject
+            - s3:PutObject
+            - s3-object-lambda:PutObject
+            - s3-object-lambda:GetObject
+            Resource: 'arn:aws:s3:::aws-lambda-edge-image2webp/*'
